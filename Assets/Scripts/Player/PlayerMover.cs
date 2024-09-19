@@ -8,7 +8,7 @@ public class PlayerMover : MonoBehaviour, IMovable
     [SerializeField] private float _speed;
 
     private Rigidbody2D _rigidbody;
-    private PlayerInput _playerInput;
+    private PlayerInput _input;
 
     private Quaternion _rightAngle = Quaternion.Euler(Vector3.zero);
     private Quaternion _leftAngle = Quaternion.Euler(0f, 180f, 0f);
@@ -18,7 +18,7 @@ public class PlayerMover : MonoBehaviour, IMovable
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _playerInput = GetComponent<PlayerInput>();
+        _input = GetComponent<PlayerInput>();
     }
 
     private void FixedUpdate()
@@ -29,7 +29,7 @@ public class PlayerMover : MonoBehaviour, IMovable
 
     private void Move()
     {
-        Vector2 direction = new Vector2(_playerInput.MoveInput * _speed, _rigidbody.velocity.y);
+        Vector2 direction = new Vector2(_input.MoveInput * _speed, _rigidbody.velocity.y);
 
         Rotate(direction.x);
         Moved?.Invoke(direction.x);

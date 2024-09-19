@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerJumper : MonoBehaviour
 {
     [SerializeField] private float _force;
-    [SerializeField] private GroundDetector _groundDetector;
+    [SerializeField] private ColliderDetector _groundDetector;
+    [SerializeField] private LayerMask _groundLayer;
 
     private Rigidbody2D _rigidbody;
     private PlayerInput _playerInput;
@@ -19,12 +20,14 @@ public class PlayerJumper : MonoBehaviour
     private void FixedUpdate()
     {
         if (_playerInput.JumpInput)
+        {
             TryJump();
+        }
     }
 
     private void TryJump()
     {
-        if (_groundDetector.IsGrounded(transform))
+        if (_groundDetector.IsGrounded(transform, _groundLayer, out _))
         {
             _rigidbody.AddForce(new Vector2(0f, _force), ForceMode2D.Impulse);
         }
