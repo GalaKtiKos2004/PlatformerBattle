@@ -1,8 +1,9 @@
+using System.Collections;
 using System.Threading;
 using UnityEngine;
 
 [RequireComponent(typeof(ColliderDetector))]
-public class Attacked : MonoBehaviour
+public class Fighter : MonoBehaviour
 {
     [SerializeField] private LayerMask _attackedLayer;
     [SerializeField] private LayerMask _playerLayer;
@@ -10,12 +11,15 @@ public class Attacked : MonoBehaviour
     [SerializeField] private Vector2 _colliderSize;
     [SerializeField] private float _damage;
     [SerializeField] private float _maxHealth;
+    [SerializeField] private float _attackColldown = 3f;
 
     private PlayerInput _input;
     private ColliderDetector _detector;
-    private LayerMask _currentLayer;
     private Attacker _attacker;
     private Health _health;
+    private WaitForSeconds _wait;
+    private LayerMask _currentLayer;
+    private bool _canAttack = true;
 
     private void Awake()
     {
@@ -24,6 +28,7 @@ public class Attacked : MonoBehaviour
         _currentLayer = gameObject.layer;
         _attacker = new Attacker();
         _health = new Health(_maxHealth);
+        _wait = new WaitForSeconds(_attackColldown);
     }
 
     private void Update()
@@ -31,21 +36,44 @@ public class Attacked : MonoBehaviour
         bool isPlayerLayer = (_playerLayer.value & (1 << gameObject.layer)) != 0;
         bool isEnemyLayer = (_enemyLayer.value & (1 << gameObject.layer)) != 0;
 
-        if ((isPlayerLayer && _input.IsAttack) || (isEnemyLayer))
+        if (_canAttack && (isPlayerLayer && _input.IsAttack || isEnemyLayer))
         {
-            _attacker.TryAttack(_damage, _detector, transform, _attackedLayer, _colliderSize);
+            Attack();
         }
 
         if (isPlayerLayer)
         {
             Debug.Log(_health.CurrentHealth);
         }
-
-        Thread.Sleep(5000);
     }
 
     public void TakeDamage(float damage)
     {
         _health.TakeDamage(damage);
+    }
+
+    private void Attack()
+    {        
+        if (_attacker.TryAttack(_damage, _detector, transform, _attackedLayer, _colliderSize))
+        {
+            StartCoroutine(AttackColldown());
+        }
+    }
+
+    private IEnumerator AttackColldown()
+    {
+        if ((_playerLayer.value & (1 << gameObject.layer)) != 0)
+        {
+            Debug.Log("Player");
+        }
+
+        if ((_enemyLayer.value & (1 << gameObject.layer)) != 0)
+        {
+            Debug.Log("Enemy");
+        }
+
+        _canAttack = false;
+        yield return _wait;
+        _canAttack = true;
     }
 }
