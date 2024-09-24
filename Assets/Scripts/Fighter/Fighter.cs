@@ -40,11 +40,6 @@ public class Fighter : MonoBehaviour
         {
             Attack();
         }
-
-        if (isPlayerLayer)
-        {
-            Debug.Log(_health.CurrentHealth);
-        }
     }
 
     public void TakeDamage(float damage)
@@ -62,16 +57,6 @@ public class Fighter : MonoBehaviour
 
     private IEnumerator AttackColldown()
     {
-        if ((_playerLayer.value & (1 << gameObject.layer)) != 0)
-        {
-            Debug.Log("Player");
-        }
-
-        if ((_enemyLayer.value & (1 << gameObject.layer)) != 0)
-        {
-            Debug.Log("Enemy");
-        }
-
         _canAttack = false;
         yield return _wait;
         _canAttack = true;

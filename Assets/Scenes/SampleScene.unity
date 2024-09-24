@@ -222,7 +222,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (13)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -253,7 +253,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -281,6 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 435901199}
+  - component: {fileID: 435901200}
   m_Layer: 0
   m_Name: Waypoint (4)
   m_TagString: Untagged
@@ -303,6 +304,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024377194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435901200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435901198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d3d03c862ab594f843d9d1c79c64a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +455,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (12)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -473,7 +486,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (11)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -486,7 +499,7 @@ Transform:
   m_GameObject: {fileID: 553210959}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.63, y: 1.25, z: 0}
+  m_LocalPosition: {x: 33.47, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1852,7 +1865,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (15)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1883,7 +1896,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1956,6 +1969,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 906608204}
+  - component: {fileID: 906608205}
   m_Layer: 0
   m_Name: Waypoint (5)
   m_TagString: Untagged
@@ -1978,6 +1992,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024377194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &906608205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906608203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d3d03c862ab594f843d9d1c79c64a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &911558649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,7 +2016,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (19)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2021,7 +2047,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (17)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2052,7 +2078,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (16)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2065,7 +2091,7 @@ Transform:
   m_GameObject: {fileID: 992343529}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.74, y: -3.73, z: 0}
+  m_LocalPosition: {x: 41.5, y: -3.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2083,7 +2109,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (21)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2388,7 +2414,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (8)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2415,6 +2441,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1480621096}
     m_Modifications:
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: _finder
+      value: 
+      objectReference: {fileID: 1621242139}
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 575364032}
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
       propertyPath: _waypoints.Array.size
       value: 2
@@ -2499,7 +2537,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (18)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2530,7 +2568,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2561,7 +2599,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (20)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2592,7 +2630,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2623,7 +2661,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (7)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2692,7 +2730,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (10)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2711,6 +2749,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2008556667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1621242137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621242138}
+  - component: {fileID: 1621242140}
+  - component: {fileID: 1621242139}
+  m_Layer: 0
+  m_Name: PlayerZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1621242138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621242137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839130735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621242139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621242137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0586390bb0cd5404e873f18aa7b065db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1621242140
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621242137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.37185192, y: 2.9748137}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.807589, y: 6.9496274}
+  m_EdgeRadius: 0
 --- !u!1 &1640182147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,7 +2851,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (14)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2754,7 +2882,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2767,7 +2895,7 @@ Transform:
   m_GameObject: {fileID: 1644994858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.41, y: -1.48, z: 0}
+  m_LocalPosition: {x: 15.1, y: -1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2778,6 +2906,38 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7889669209707482266, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
   m_PrefabInstance: {fileID: 2163636522690114254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1839130734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839130735}
+  m_Layer: 0
+  m_Name: PlayerZones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1839130735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839130734}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.873178, y: -0.2432064, z: -0.06734546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1621242138}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861302560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2790,7 +2950,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (23)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2821,7 +2981,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (22)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2878,9 +3038,9 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  _colliderSize: {x: 0, y: 0}
-  _damage: 0
-  _maxHealth: 0
+  _colliderSize: {x: 1, y: 1}
+  _damage: 5
+  _maxHealth: 40
   _attackColldown: 3
 --- !u!1 &1906755301
 GameObject:
@@ -2894,7 +3054,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2907,7 +3067,7 @@ Transform:
   m_GameObject: {fileID: 1906755301}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.35, y: -1.48, z: 0}
+  m_LocalPosition: {x: 20.39, y: -1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2925,7 +3085,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2938,7 +3098,7 @@ Transform:
   m_GameObject: {fileID: 1915089814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.88, y: -1.48, z: 0}
+  m_LocalPosition: {x: 17.84, y: -1.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2956,7 +3116,7 @@ GameObject:
   m_Layer: 0
   m_Name: CoinPoint (9)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3185,6 +3345,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102232774}
+  - component: {fileID: 2102232775}
   m_Layer: 0
   m_Name: Waypoint (3)
   m_TagString: Untagged
@@ -3207,6 +3368,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024377194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102232775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102232773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d3d03c862ab594f843d9d1c79c64a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138954789
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,6 +3389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138954790}
+  - component: {fileID: 2138954791}
   m_Layer: 0
   m_Name: Waypoint
   m_TagString: Untagged
@@ -3238,6 +3412,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2024377194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2138954791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138954789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d3d03c862ab594f843d9d1c79c64a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2163636522690114254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3246,6 +3432,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1480621096}
     m_Modifications:
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: _finder
+      value: 
+      objectReference: {fileID: 1621242139}
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 575364032}
+    - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
       propertyPath: _waypoints.Array.size
       value: 2
@@ -3364,9 +3562,9 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  _colliderSize: {x: 0, y: 0}
-  _damage: 0
-  _maxHealth: 0
+  _colliderSize: {x: 1, y: 1}
+  _damage: 5
+  _maxHealth: 40
   _attackColldown: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3380,3 +3578,4 @@ SceneRoots:
   - {fileID: 2008556667}
   - {fileID: 1031469702}
   - {fileID: 2024377194}
+  - {fileID: 1839130735}

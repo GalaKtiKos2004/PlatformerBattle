@@ -194,7 +194,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f838ce7644ea443b65ccf824d21f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _player: {fileID: 0}
+  _finder: {fileID: 0}
+  _speed: 4
   _delay: 5
   _waypoints: []
 --- !u!114 &7074206839650105699
