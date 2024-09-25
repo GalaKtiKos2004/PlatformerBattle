@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Threading;
 using UnityEngine;
 
 [RequireComponent(typeof(ColliderDetector))]
@@ -18,17 +17,22 @@ public class Fighter : MonoBehaviour
     private Attacker _attacker;
     private Health _health;
     private WaitForSeconds _wait;
-    private LayerMask _currentLayer;
+    private Vector3 _startPosition;
     private bool _canAttack = true;
 
     private void Awake()
     {
         TryGetComponent(out _input);
         _detector = GetComponent<ColliderDetector>();
-        _currentLayer = gameObject.layer;
         _attacker = new Attacker();
         _health = new Health(_maxHealth);
         _wait = new WaitForSeconds(_attackColldown);
+        _startPosition = transform.position;
+    }
+
+    private void OnEnable()
+    {
+        _health.Died += Die;
     }
 
     private void Update()
@@ -42,16 +46,36 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        _health.Died -= Die;
+    }
+
     public void TakeDamage(float damage)
     {
         _health.TakeDamage(damage);
     }
 
     private void Attack()
-    {        
+    {
         if (_attacker.TryAttack(_damage, _detector, transform, _attackedLayer, _colliderSize))
         {
             StartCoroutine(AttackColldown());
+        }
+    }
+
+    private void Die()
+    {
+        if ((_playerLayer.value & (1 << gameObject.layer)) != 0)
+        {
+            _health.Died -= Die;
+            transform.position = _startPosition;
+            _health = new Health(_maxHealth);
+            _health.Died += Die;    
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 

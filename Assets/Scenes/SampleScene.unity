@@ -805,7 +805,7 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  _colliderSize: {x: 0.75, y: 1}
+  _colliderSize: {x: 1.5, y: 1}
   _damage: 10
   _maxHealth: 100
   _attackColldown: 3
@@ -1884,6 +1884,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2008556667}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &766318974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766318975}
+  - component: {fileID: 766318977}
+  - component: {fileID: 766318976}
+  m_Layer: 0
+  m_Name: PlayerZone (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766318975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766318974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 24.83, y: -3.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1839130735}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766318976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766318974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0586390bb0cd5404e873f18aa7b065db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &766318977
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766318974}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.65964127, y: 1.6552594}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.60257, y: 4.3105183}
+  m_EdgeRadius: 0
 --- !u!1 &768757404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,7 +2534,7 @@ PrefabInstance:
     - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
       propertyPath: _finder
       value: 
-      objectReference: {fileID: 1621242139}
+      objectReference: {fileID: 766318976}
     - target: {fileID: 1214342930913752821, guid: 0188401b33df98e47b796a6d8fd772e1, type: 3}
       propertyPath: _player
       value: 
@@ -2936,6 +3026,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1621242138}
+  - {fileID: 766318975}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1861302560
@@ -3038,10 +3129,10 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  _colliderSize: {x: 1, y: 1}
+  _colliderSize: {x: 1.25, y: 1}
   _damage: 5
   _maxHealth: 40
-  _attackColldown: 3
+  _attackColldown: 1.5
 --- !u!1 &1906755301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,10 +3653,10 @@ MonoBehaviour:
   _enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  _colliderSize: {x: 1, y: 1}
+  _colliderSize: {x: 1.25, y: 1}
   _damage: 5
   _maxHealth: 40
-  _attackColldown: 3
+  _attackColldown: 1.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -6,10 +6,10 @@ using UnityEngine;
 public class EnemyPatroler : MonoBehaviour, IMovable
 {
     [SerializeField] private Transform _player;
+    [SerializeField] private List<Transform> _waypoints;
     [SerializeField] private PlayerFinder _finder;
     [SerializeField] private float _speed = 3f;
     [SerializeField] private float _delay = 5f;
-    [SerializeField] private List<Transform> _waypoints;
 
     private Transform _target;
 
@@ -108,12 +108,11 @@ public class EnemyPatroler : MonoBehaviour, IMovable
         Vector3 rotation = new Vector3(0f, 180f, 0f);
 
         _currentSpeed = 0;
+        _currentWaypoint = 0;
 
         yield return _wait;
 
         _waypoints.Reverse();
-        _currentWaypoint = 0;
-
         _currentSpeed = _speed;
     }
 }
