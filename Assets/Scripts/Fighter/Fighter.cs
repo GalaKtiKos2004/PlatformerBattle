@@ -44,11 +44,21 @@ public class Fighter : MonoBehaviour
         {
             Attack();
         }
+
+        if (isPlayerLayer)
+        {
+            Debug.Log(_health.CurrentHealth);
+        }
     }
 
     private void OnDisable()
     {
         _health.Died -= Die;
+    }
+
+    public void AddHealth(float recoverHealth)
+    {
+        _health.AddHealth(recoverHealth);
     }
 
     public void TakeDamage(float damage)

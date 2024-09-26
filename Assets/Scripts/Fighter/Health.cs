@@ -20,4 +20,9 @@ public class Health
             Died?.Invoke();
         }
     }
+
+    public void AddHealth(float recoverHealth)
+    {
+        CurrentHealth += recoverHealth;
+    }
 }

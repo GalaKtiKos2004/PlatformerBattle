@@ -32,6 +32,5 @@ public class PlayerJumper : MonoBehaviour
         {
             _rigidbody.AddForce(new Vector2(0f, _force), ForceMode2D.Impulse);
         }
-
     }
 }

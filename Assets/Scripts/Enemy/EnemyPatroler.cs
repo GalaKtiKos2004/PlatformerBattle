@@ -26,7 +26,7 @@ public class EnemyPatroler : MonoBehaviour, IMovable
         _finder.Collide += ChangeTarget;
     }
 
-    private void Start()
+    private void Awake()
     {
         _wait = new WaitForSeconds(_delay);
         _currentSpeed = _speed;

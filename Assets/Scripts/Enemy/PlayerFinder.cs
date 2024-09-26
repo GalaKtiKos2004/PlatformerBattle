@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class PlayerFinder : MonoBehaviour
 {
-    private const string PlayerLayer = "Player";
+    [SerializeField] LayerMask _playerLayer;
 
     public event Action Collide;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == PlayerLayer)
+        if ((_playerLayer & (1 << collision.gameObject.layer)) != 0)
         {
             Collide?.Invoke();
         }
@@ -17,7 +17,7 @@ public class PlayerFinder : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (LayerMask.LayerToName(collision.gameObject.layer) == PlayerLayer)
+        if ((_playerLayer & (1 << collision.gameObject.layer)) != 0)
         {
             Collide?.Invoke();
         }
