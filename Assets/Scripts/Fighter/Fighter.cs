@@ -56,9 +56,13 @@ public class Fighter : MonoBehaviour
         _health.Died -= Die;
     }
 
-    public void AddHealth(float recoverHealth)
+    public bool TryAddHealth(float recoverHealth)
     {
-        _health.AddHealth(recoverHealth);
+        if (_health.TryAddHealth(recoverHealth))
+        {
+            return true;
+        }
+        return false;
     }
 
     public void TakeDamage(float damage)

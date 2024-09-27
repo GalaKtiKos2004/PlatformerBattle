@@ -23,7 +23,10 @@ public class Collector : MonoBehaviour
 
             if (collectable is MedecineChest medecineChest)
             {
-                _fighter.AddHealth(medecineChest.RecoverHealth);
+                if (_fighter.TryAddHealth(medecineChest.RecoverHealth) == false)
+                {
+                    return;
+                }
             }
 
             collectable.Collect();

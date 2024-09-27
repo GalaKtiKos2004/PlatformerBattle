@@ -25,10 +25,16 @@ public class Health
         }
     }
 
-    public void AddHealth(float recoverHealth)
+    public bool TryAddHealth(float recoverHealth)
     {
-        float minHealth = 0;
-
-        CurrentHealth = CurrentHealth = Mathf.Clamp(CurrentHealth + recoverHealth, minHealth, _maxHealth);
+        if (CurrentHealth + recoverHealth > _maxHealth)
+        {
+            return false;
+        }
+        else
+        {
+            CurrentHealth += recoverHealth;
+            return true;
+        }
     }
 }
