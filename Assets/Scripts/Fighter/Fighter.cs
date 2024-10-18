@@ -44,11 +44,6 @@ public class Fighter : MonoBehaviour
         {
             Attack();
         }
-
-        if (isPlayerLayer)
-        {
-            Debug.Log(_health.CurrentHealth);
-        }
     }
 
     private void OnDisable()

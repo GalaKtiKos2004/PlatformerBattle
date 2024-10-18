@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class Attacker
 {
     public bool TryAttack(float damage, ColliderDetector detector, Transform position, LayerMask attackedLayer, Vector2 colliderSize)
